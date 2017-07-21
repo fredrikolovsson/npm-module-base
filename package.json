@@ -1,6 +1,6 @@
 {
   "name": "npm-module-base",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Base configuration for building and publishing npm modules",
   "main": "build/index.js",
   "scripts": {
