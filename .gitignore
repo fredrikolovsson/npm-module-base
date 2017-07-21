@@ -1,3 +1,11 @@
+# Build directory
+build
+
+# Editor settings
+.vscode/*
+
+# Below is the default Node .gitignore by GitHub
+
 # Logs
 logs
 *.log

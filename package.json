@@ -1,0 +1,48 @@
+{
+  "name": "npm-module-base",
+  "version": "0.1.0",
+  "description": "Base configuration for building and publishing npm modules",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "lint": "eslint 'src/**/*.js'",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredrikolovsson/npm-module-base.git"
+  },
+  "keywords": [
+    "npm",
+    "module"
+  ],
+  "author": "Fredrik Olovsson (http://fredrikolovsson.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fredrikolovsson/npm-module-base/issues"
+  },
+  "homepage": "https://github.com/fredrikolovsson/npm-module-base#README",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.4",
+    "np": "^2.16.0",
+    "watch": "^1.0.2"
+  }
+}
